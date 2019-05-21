@@ -72,20 +72,17 @@ do
 		if (($icol % 3 == 0))
 		then
 			# reverse the text in this column
-			#echo $icol
 			itext=${#currval}
 			outval=""
 			while [ $itext -gt 0 ]
 			do
 				((itext--))
 				outval="$outval${currval:$itext:1}"
-				#echo $outval
 			done
 			outputrow="$outputrow$outval"
 
 		else
 			# don't reverse the text
-			#echo $icol "hey"
 			outputrow="$outputrow$currval"
 		fi
 
