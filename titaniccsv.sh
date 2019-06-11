@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Reversed columns
-
 numcols="$(csvtool width train.csv)"
+
+# Reversed columns
 
 bckcols=$numcols
 
